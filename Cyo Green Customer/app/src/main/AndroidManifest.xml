@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.malaysia.bri">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.malaysia.bri.authentication.SignUpActivity"></activity>
+        <activity android:name="com.malaysia.bri.navigationActivity.OrderDetailsActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <activity android:name="com.malaysia.bri.navigationActivity.CartActivity" />
+        <activity android:name="com.malaysia.bri.search.SaerchActivity" />
+        <activity android:name="com.malaysia.bri.category.Category_Activity" />
+        <activity android:name="com.malaysia.bri.authentication.SignIn_Activity" />
+        <activity android:name="com.malaysia.bri.navigationActivity.ProfileActivity" />
+        <activity android:name="com.malaysia.bri.navigationActivity.OrderActivity" />
+        <activity android:name="com.malaysia.bri.navigationActivity.support_solved_and_unsolved.Support_Ticket" />
+        <activity android:name="com.malaysia.bri.navigationActivity.ContactUsActivity" />
+        <activity android:name="com.malaysia.bri.navigationActivity.PrivacyPolicyActivity" />
+        <activity android:name="com.malaysia.bri.navigationActivity.AboutUsActivity" />
+        <activity android:name="com.malaysia.bri.dashboard.Dashboard" />
+        <activity android:name="com.malaysia.bri.signup" />
+        <activity android:name="com.malaysia.bri.startActivity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_mob0wb9GrlbnE1" />
+    </application>
+
+</manifest>

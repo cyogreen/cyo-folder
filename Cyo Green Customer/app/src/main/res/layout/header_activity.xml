@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/mainRel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/menu_img"
+            android:layout_width="30sp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="10sp"
+            android:padding="5sp"
+            app:srcCompat="@drawable/menu"
+            android:contentDescription="TODO" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/profile"
+            android:layout_toRightOf="@+id/menu_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10sp"
+            android:padding="5sp"
+            android:id="@+id/profile"
+            app:srcCompat="@drawable/account"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/search_rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:id="@+id/searchRel"
+            android:background="@color/colorWhite"
+            android:padding="10sp">
+
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@+id/search"
+                android:focusableInTouchMode="false"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:text="@string/search_for_products"
+                android:textColor="@color/darkGray"
+                android:textSize="@dimen/_12sdp" />
+            <ImageView
+                android:id="@+id/search"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_centerVertical="true"
+                android:padding="3sp"
+                android:focusable="false"
+                app:srcCompat="@drawable/search" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

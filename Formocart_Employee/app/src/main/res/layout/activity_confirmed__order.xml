@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".navigation_menu.TransactionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".navigationActivity.support_solved_and_unsolved.Support_Ticket">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".navigationActivity.AboutUsActivity">
+
+            <RelativeLayout
+                android:id="@+id/mainRel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/menu_img"
+                    android:layout_width="30sp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10sp"
+                    android:contentDescription="TODO"
+                    android:padding="5sp"
+                    app:srcCompat="@drawable/menu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Orders"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:layout_width="30sp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10sp"
+                    android:padding="5sp"
+                    android:id="@+id/profile"
+                    app:srcCompat="@drawable/account" />
+            </RelativeLayout>
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_below="@id/mainRel"
+                android:layout_gravity="center"
+                android:layout_margin="10sp"
+                tools:ignore="UselessParent">
+                <TableLayout
+                    android:id="@+id/tabla_cuerpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+<!--                    <TableRow-->
+<!--                        android:id="@+id/tableRow1"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content">-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/ticketNo"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/cell_shape"-->
+<!--                            android:paddingRight="15sp"-->
+<!--                            android:paddingLeft="15sp"-->
+<!--                            android:paddingTop="10sp"-->
+<!--                            android:paddingBottom="10sp"-->
+<!--                            android:textSize="13sp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:text="Order ID"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/subject"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/cell_shape"-->
+<!--                            android:paddingRight="15sp"-->
+<!--                            android:paddingLeft="15sp"-->
+<!--                            android:paddingTop="10sp"-->
+<!--                            android:textSize="13sp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:paddingBottom="10sp"-->
+<!--                            android:text="Shop Name"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/status"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/cell_shape"-->
+<!--                            android:paddingRight="15sp"-->
+<!--                            android:paddingLeft="15sp"-->
+<!--                            android:paddingTop="10sp"-->
+<!--                            android:textSize="13sp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:paddingBottom="10sp"-->
+<!--                            android:text="Area"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/reply"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/cell_shape"-->
+<!--                            android:paddingRight="15sp"-->
+<!--                            android:paddingLeft="15sp"-->
+<!--                            android:paddingTop="10sp"-->
+<!--                            android:paddingBottom="10sp"-->
+<!--                            android:textSize="13sp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="Amount"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+<!--                        <TextView-->
+<!--                            android:id="@+id/status"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/cell_shape"-->
+<!--                            android:paddingRight="15sp"-->
+<!--                            android:paddingLeft="15sp"-->
+<!--                            android:paddingTop="10sp"-->
+<!--                            android:paddingBottom="10sp"-->
+<!--                            android:textSize="13sp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="Status"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                    </TableRow>-->
+
+<!--                    <TableRow-->
+<!--                        android:id="@+id/tableRow2"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:gravity="center">-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/cell_shape"-->
+<!--                            android:paddingRight="15sp"-->
+<!--                            android:paddingLeft="15sp"-->
+<!--                            android:paddingTop="10sp"-->
+<!--                            android:paddingBottom="10sp"-->
+<!--                            android:text="OR1234"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/cell_shape"-->
+<!--                            android:paddingRight="15sp"-->
+<!--                            android:paddingLeft="15sp"-->
+<!--                            android:paddingTop="10sp"-->
+<!--                            android:paddingBottom="10sp"-->
+<!--                            android:text="ABC"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/cell_shape"-->
+<!--                            android:paddingRight="15sp"-->
+<!--                            android:paddingLeft="15sp"-->
+<!--                            android:paddingTop="10sp"-->
+<!--                            android:paddingBottom="10sp"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:gravity="center"-->
+<!--                            android:text="Bengaluru"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/cell_shape"-->
+<!--                            android:paddingRight="15sp"-->
+<!--                            android:paddingLeft="15sp"-->
+<!--                            android:paddingTop="10sp"-->
+<!--                            android:paddingBottom="10sp"-->
+<!--                            android:text="Rs. 350"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:background="@drawable/cell_shape"-->
+<!--                            android:paddingRight="15sp"-->
+<!--                            android:paddingLeft="15sp"-->
+<!--                            android:paddingTop="10sp"-->
+<!--                            android:paddingBottom="10sp"-->
+<!--                            android:text="On The Way"-->
+<!--                            android:gravity="center"-->
+<!--                            android:textSize="12sp"-->
+<!--                            android:textAppearance="?android:attr/textAppearanceMedium"/>-->
+
+<!--                    </TableRow>-->
+                </TableLayout>
+            </HorizontalScrollView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/noRecord"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_below="@+id/mainRel">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Record Found"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif-condensed"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/activity_nav_sliding_header" />
+</androidx.drawerlayout.widget.DrawerLayout>

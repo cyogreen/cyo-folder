@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="10sp"
+    android:background="@color/white"
+    >
+    <ImageView
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:id="@+id/close_img"
+        android:layout_gravity="end"
+        android:layout_marginRight="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select language"
+        android:layout_margin="10sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lang_radio"
+        android:layout_margin="10sp">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O'zbekcha"
+            android:id="@+id/uz"
+            android:padding="5sp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English"
+            android:id="@+id/english"
+            android:padding="5sp"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pyccknn"
+            android:id="@+id/py"
+            android:padding="5sp"/>
+    </RadioGroup>
+</LinearLayout>

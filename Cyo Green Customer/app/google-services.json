@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "189860043015",
+    "firebase_url": "https://ecomersebri.firebaseio.com",
+    "project_id": "ecomersebri",
+    "storage_bucket": "ecomersebri.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189860043015:android:403b7e185c8ec93c524da2",
+        "android_client_info": {
+          "package_name": "com.malaysia.bri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189860043015-pgv0qtvlajvm3107ge8huvd2uv8n5l3n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgEeChBGg_Vze9tQdTshOP3Hf3NATvQCA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189860043015-pgv0qtvlajvm3107ge8huvd2uv8n5l3n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

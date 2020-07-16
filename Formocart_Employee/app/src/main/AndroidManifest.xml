@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skycode.formocart_employee">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.formocart_employee.navigation_menu.order.OrderDetailsActivity"></activity>
+        <activity android:name="com.example.formocart_employee.signin.SignIn_Activity" />
+        <activity android:name="com.example.formocart_employee.navigation_menu.CreateShopActivity" />
+        <activity android:name="com.example.formocart_employee.navigation_menu.shop_management.Confirmed_Shop_Activity" />
+        <activity android:name="com.example.formocart_employee.navigation_menu.shop_management.ShopManagementListing_Activity" />
+        <activity android:name="com.example.formocart_employee.navigation_menu.shop_management.Visitor_Shop_Activity" />
+        <activity android:name="com.example.formocart_employee.navigation_menu.order.Confirmed_OrderActivity" />
+        <activity android:name="com.example.formocart_employee.navigation_menu.order.Cod_OrderActivity" />
+        <activity android:name="com.example.formocart_employee.navigation_menu.order.Order_Management_Listing" />
+        <activity android:name="com.example.formocart_employee.navigation_menu.payout.Shop_Outstanding_Payout" />
+        <activity android:name="com.example.formocart_employee.navigation_menu.payout.Pending_Payout_Activity" />
+        <activity android:name="com.example.formocart_employee.navigation_menu.payout.Payout_Listing_Activity" />
+        <activity android:name="com.example.formocart_employee.navigation_menu.RaiseARequestActivity" />
+        <activity android:name="com.example.formocart_employee.navigation_menu.TransactionActivity" />
+        <activity android:name="com.example.formocart_employee.profile.ProfileActivity" />
+        <activity android:name="com.example.formocart_employee.dashboard.DashboardActivity" />
+        <activity android:name="com.example.formocart_employee.splashActivity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="android.getqardio.com.gmslocationtest"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

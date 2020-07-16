@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawer"
+    android:background="@color/white"
+    tools:context=".dashboard.Dashboard">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".navigationActivity.AboutUsActivity">
+
+        <RelativeLayout
+            android:id="@+id/mainRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/menu_img"
+                android:layout_width="30sp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="10sp"
+                android:contentDescription="TODO"
+                android:padding="5sp"
+                app:srcCompat="@drawable/menu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Contact Us"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10sp"
+                android:padding="5sp"
+                android:id="@+id/profile"
+                app:srcCompat="@drawable/account" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:layout_below="@+id/mainRel">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:layout_marginTop="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salakart"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Id"
+                android:layout_marginTop="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="salakart@gmail.com"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:layout_marginTop="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="987654321"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textStyle="bold"
+                android:layout_marginTop="20sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Himachal Pradesh , India"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/activity_nav_sliding_header" />
+</androidx.drawerlayout.widget.DrawerLayout>
